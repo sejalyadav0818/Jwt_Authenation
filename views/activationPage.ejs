@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actiation Page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="activaion">
+
+       
+<% if(activated == true){ %>
+    <h1>Your account activated </h1>
+    <h5>Login here  to <a href="/login">Login</a>
+
+<% }else { %>
+   
+    You are Register,Thank You for registering !   
+    <div>
+        <a href="/activateuser/?id=<%=userID%>">
+        click here to activate the account  <%= activation_url %>
+    </div>
+  <%}%>
+               
+    </div>
+</div>
+    </div>
+    </div>
+</body>
+</html>

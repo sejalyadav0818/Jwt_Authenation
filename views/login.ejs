@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="/css/style.css" rel="stylesheet">
+
+<body >
+    <div class="container" id="form-div">
+        <div>
+            <span><img src="/images/logo.svg"></span>
+        </div>
+        <h3>Welcome Back ! </h3>
+ 
+        <form method="post"  action="/login" class="form"  class="w3-container w3-card-4">
+            <div class="space">
+                <label for="email">Email address</label>
+                <input type="email"  placeholder="Enter email" name="email" required class="w3-input w3-border">
+            </div>
+            <div class="space">
+                <label for="password">Password</label>
+                <input type="password"placeholder="Password" name="password" required  class="w3-input w3-border">
+                <span>forgot password ?<a href="" >Click here</a></span>
+            </div>
+            <div class="space">
+                <input type="submit"  value="Login" class="w3-btn w3-blue">
+                 have an account ?<a href="/register" >Register</a>
+            </div>
+            <div>
+                <span><img src="/images/bottom-logo.png"  class="img-bottom"></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
